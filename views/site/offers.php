@@ -7,10 +7,9 @@ use yii\widgets\ListView;
 $this->title = Yii::$app->name;
 ?>
 
-Always we have deals!, Just Book
-<div class="row">
-    <?php echo $this->render('_search', ['model' => $searchModel]); ?>
-</div>
+<h3>Always we have deals!, Just Book!</h3>
+
+<?php echo $this->render('_search', ['model' => $searchModel]); ?>
     
 <div class="row">
     <div class="col-sm-12 col-sm-offest-1">

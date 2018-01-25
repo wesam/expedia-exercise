@@ -9,7 +9,7 @@ use kartik\date\DatePicker;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="city-search">
+<div class="clearfix city-search margin-buttom20">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],

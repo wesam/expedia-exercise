@@ -16,6 +16,7 @@ $this->title = Yii::$app->name;
         <?= ListView::widget([
             'options' => [
                 'tag' => 'div',
+                'class' => 'text-center'
             ],
             'dataProvider' => $dataProvider,
             'itemView' => function ($model, $key, $index, $widget) {
@@ -36,7 +37,7 @@ $this->title = Yii::$app->name;
                 'lastPageLabel' => 'Last',
                 'maxButtonCount' => 4,
                 'options' => [
-                    'class' => 'pagination col-xs-12'
+                    'class' => 'pagination'
                 ]
             ],
     

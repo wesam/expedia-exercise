@@ -29,7 +29,6 @@ $this->title = Yii::$app->name;
             ],
             'summary' => '',
             
-            /* do not display {summary} */
             'layout' => '{items} {pager}',
     
             'pager' => [

@@ -56,7 +56,7 @@ use kartik\widgets\StarRating;
                  <div class="content">
                      <div class="main">
                          <h4 class="text-center">Full details check bellow</h4>
-                         <p class="text-center"><a href="<?= urldecode($model['hotelUrls']['hotelSearchResultUrl']) ?>">Hotel Site</a></p>
+                         <p class="text-center"><a target="_blank" href="<?= urldecode($model['hotelUrls']['hotelSearchResultUrl']) ?>">Hotel Site</a></p>
     
                          <div class="stats-container">
                              <div class="stats">
@@ -77,7 +77,7 @@ use kartik\widgets\StarRating;
                  </div>
                  
                  <div class="footer">
-                     <a href="<?= urldecode($model['hotelUrls']['hotelSearchResultUrl']) ?>">See more like this</a>
+                     <a target="_blank" href="<?= urldecode($model['hotelUrls']['hotelSearchResultUrl']) ?>">See more like this</a>
                  </div>
                  
              </div> <!-- end back panel -->

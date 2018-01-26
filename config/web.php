@@ -1,7 +1,7 @@
 <?php
 
 $params = require __DIR__ . '/params.php';
-$db = require __DIR__ . '/db.php';
+// $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
@@ -16,17 +16,16 @@ $config = [
         'hiart' => [
             'class' => \hiqdev\hiart\rest\Connection::class,
             'requestClass' => \hiqdev\hiart\auto\Request::class,
-            // 'baseUri' => 'https://offersvc.expedia.com/offers/v2/getOffers?scenario=deal-finder&page=foo&uid=foo&productType=Hotel',
             'baseUri' => 'https://offersvc.expedia.com/offers/v2/get',
             
         ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'CuVg53m2ZwO1Fs_yRyobDEumkFW8WWsN',
+            'cookieValidationKey' => 'CuVg53m2eeeTTVcbg553ZwO1Fs_yRyobDEumkFW8WWsN',
         ],
-        'cache' => [
-            'class' => 'yii\caching\FileCache',
-        ],
+        // 'cache' => [
+            // 'class' => 'yii\caching\FileCache',
+        // ],
         // 'user' => [
             // 'identityClass' => 'app\models\User',
             // 'enableAutoLogin' => true,

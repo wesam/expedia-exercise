@@ -35,7 +35,7 @@ http://localhost:8080/
 By setting basic/web as the document root in Apache/Nginx Configuration
 
 
-##### Any assumptions you've made about the API or the runtime environment ?
+#### Any assumptions you've made about the API or the runtime environment ?
 It would be great if the provided API is OPTIONS method supported to return available HTTP methods and other options like allowed query parameters.
 
-##### Any known issues with your example ?
+#### Any known issues with your example ?

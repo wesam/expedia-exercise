@@ -14,6 +14,7 @@ use kartik\date\DatePicker;
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
         'method' => 'get',
+        'id'     => 'offers-form'
     ]); ?>
 
     <div class="row">

@@ -14,7 +14,13 @@ return [
     ],  
     'language' => 'en-US',
     'components' => [
-        'db' => $db,
+        //'db' => $db,
+        'hiart' => [
+            'class' => \hiqdev\hiart\rest\Connection::class,
+            'requestClass' => \hiqdev\hiart\auto\Request::class,
+            'baseUri' => 'https://offersvc.expedia.com/offers/v2/get',
+            
+        ],
         'mailer' => [
             'useFileTransport' => true,
         ],
@@ -37,6 +43,15 @@ return [
             ],
             */
         ],        
+        'log' => [
+            'traceLevel' => YII_DEBUG ? 3 : 0,
+            'targets' => [
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['error', 'warning'],
+                ],
+            ],
+        ],
     ],
     'params' => $params,
 ];
